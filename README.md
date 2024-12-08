@@ -1,28 +1,28 @@
-# Spam Email Detector
+# Spam email detector
 
-## Project Overview
+## Project overview
 The goal of this project is to classify spam emails provided by users through a web interface.  
 The program analyzes the content of an email and determines whether it is spam or not.  
 Additionally, it maintains a history of processed emails for user reference.
 
 ---
 
-## Project Description
+## Project description
 This system is trained using an external dataset containing labeled email samples, where each email is marked as:
 - **Spam** (`1`)
-- **Not Spam** (`0`)
+- **Not spam** (`0`)
 
 The key stages of the project include:
 
-### 1. Data Loading and Preparation
+### 1. Data loading and preparation
 
-#### Data Cleaning
+#### Data cleaning
 The following techniques are used to clean and preprocess the email text:
 - **Tokenization**:  
   Splitting the text into smaller units (tokens) while removing unwanted characters such as punctuation.
 - **Lemmatization**:  
   Extracting the root form of words based on their context to ensure uniformity in analysis.
-- **Stopword Removal**:  
+- **Stopword removal**:  
   Eliminating commonly used words (e.g., "the," "and") that do not contribute significant meaning.
 
 #### Vectorization
@@ -31,21 +31,21 @@ This approach highlights the most meaningful words in a document relative to the
 
 ---
 
-### 2. Model Training
+### 2. Model training
 
-#### Data Splitting
+#### Data splitting
 The dataset is divided into training and testing sets to evaluate model performance.
 
-#### Naive Bayes Classifier
+#### Naive Bayes classifier
 The chosen model for spam classification due to its effectiveness in text classification tasks.
 
-#### Model Evaluation
+#### Model evaluation
 - **Accuracy**: Achieved **97%**, demonstrating high reliability.  
-- **Confusion Matrix**: Provides insights into how well the model distinguishes between spam and non-spam emails.
+- **Confusion matrix**: Provides insights into how well the model distinguishes between spam and non-spam emails.
 
 ---
 
-### 3. Web Application Integration
+### 3. Web application integration
 The web application is built using the **Flask** framework and includes the following features:
 1. A user-friendly interface for submitting email content.
 2. Backend processing for spam classification.
@@ -54,14 +54,14 @@ The web application is built using the **Flask** framework and includes the foll
 
 ---
 
-## Setup Instructions
+## Setup instructions
 
 ### Prerequisites
 Ensure the following are installed on your system:
 - **Python** (version 3.8 or higher)
 - **pip** (Python package manager)
 
-### Steps to Run
+### Steps to run
 
 1. **Clone the repository from GitHub**:
    ```bash
